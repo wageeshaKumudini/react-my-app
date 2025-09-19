@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="text-2xl font-bold text-sky-600">LOGO</div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-10 relative ">
+        <div className="hidden md:flex items-center gap-1 ">
           <ul className="flex items-center gap-8 relative">
             {links.map((link) => (
               <li key={link.name} className="relative">
@@ -71,7 +71,7 @@ const Navbar = () => {
           {/* Contact Button */}
           <a
             href="#contact"
-            className="bg-sky-600 text-white px-5 py-2 rounded-md hover:bg-sky-600"
+            className="bg-sky-600 text-white px-6 py-2 rounded-md hover:bg-sky-600"
           >
             Contact us
           </a>
