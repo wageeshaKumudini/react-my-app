@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Dot from "../assets/dot.svg";
 import { X } from "lucide-react";
-import { motion,AnimatePresence  } from "framer-motion";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -43,7 +42,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-1 ">
-          <ul className="flex items-center gap-15 relative">
+          <ul className="flex items-center gap-15 relative mr-6">
             {links.map((link) => (
               <li key={link.name} className="relative">
                 <a
@@ -58,7 +57,6 @@ const Navbar = () => {
                 </a>
                 {activeLink === link.name && (
                   <img
-                  
                     src={Dot}
                     alt="dot"
                     className="absolute top-[-1px] -left-1.5 transform -translate-x-1/2 w-2 h-2"
@@ -71,36 +69,34 @@ const Navbar = () => {
           {/* Contact Button */}
           <a
             href="#contact"
-            className="bg-sky-600 text-white px-1 py-2 rounded-md hover:bg-sky-600 "
+            className="bg-sky-600 text-white px-4 py-2 rounded-md hover:bg-sky-600"
           >
             Contact us
           </a>
         </div>
 
-      {/* Mobile Menu Button */}
-<div className="md:hidden flex items-center">
-  <button
-    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-    className="focus:outline-none"
-    aria-label="Toggle menu"
-  >
-    {isMobileMenuOpen ? (
-      <X size={28} className="text-black" />
-    ) : (
-      <div className="space-y-1">
-        <div className="w-6 h-0.5 bg-black"></div>
-        <div className="w-6 h-0.5 bg-black"></div>
-        <div className="w-6 h-0.5 bg-black"></div>
-      </div>
-    )}
-  </button>
-</div>
-
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? (
+              <X size={28} className="text-black" />
+            ) : (
+              <div className="space-y-1">
+                <div className="w-6 h-0.5 bg-black"></div>
+                <div className="w-6 h-0.5 bg-black"></div>
+                <div className="w-6 h-0.5 bg-black"></div>
+              </div>
+            )}
+          </button>
+        </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden flex flex-col items-center py-4 gap-4 z-40">
-            
             {links.map((link) => (
               <a
                 key={link.name}

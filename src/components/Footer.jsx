@@ -10,7 +10,7 @@ import lindin from "../assets/lindin.svg"
 const Footer = () => {
   return (
     <footer className="container mx-auto  bg-white py-10 border-t  ">
-      <div className=" px-12 grid md:grid-cols-4 gap-8 text-center md:text-left items-start">
+      <div className="grid md:grid-cols-4 gap-25 text-center md:text-left items-start">
         {/* Left Logo Section */}
         <div>
           <h3 className="Poppins text-sky-600 mb-2">LOGO</h3>
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         {/* About us Section */}
-        <div className="md:ml-30">
+        <div className="md:ml-0">
           <h3 className="Poppins mb-2 text-black">About us</h3>
           <ul className="space-y-1 text-gray-500">
             <li>Lorem</li>
@@ -52,14 +52,14 @@ const Footer = () => {
               href="#"
               className="p-0 rounded-full bg-white flex items-center justify-center"
             >
-              <img src={Facebook} alt="Facebook" className="w-[40px] h-[48px]" />
+              <img src={Facebook} alt="Facebook" className="w-[40px] h-[40px]" />
             </a>
 
                   <a
             href="#"
             className="p-0 rounded-full bg-white flex items-center justify-center"
           >
-            <img src={instergram} alt="instergram" className="w-[40px] h-[48px]" />
+            <img src={instergram} alt="instergram" className="w-[40px] h-[40px]" />
           </a>
 
           {/* Twitter */}
@@ -67,7 +67,7 @@ const Footer = () => {
             href="#"
             className="p-0 rounded-full bg-white flex items-center justify-center"
           >
-            <img src={twitter} alt="twitter" className="w-[40px] h-[48px]" />
+            <img src={twitter} alt="twitter" className="w-[40px] h-[40px]" />
           </a>
 
           {/* LinkedIn */}
@@ -75,7 +75,7 @@ const Footer = () => {
             href="#"
             className="p-0 rounded-full bg-white flex items-center justify-center"
           >
-            <img src={lindin} alt="lindin" className="w-[40px] h-[48px]" />
+            <img src={lindin} alt="lindin" className="w-[40px] h-[40px]" />
           </a>
                 </div>
               </div>

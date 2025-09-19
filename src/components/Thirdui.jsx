@@ -54,10 +54,10 @@ const Thirdui = () => {
       <div className="max-w-[1536px] mx-auto px-4 md:px-12 ">
         <div className="text-center mb-16">
           <div className=" border-t border-gray-300 my-6 left-1/2 right-1/2 -translate-x-1/2 relative w-screen "></div>
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-25">
             Lorem Ipsum is simply dummy text of the printing.
           </h2>
-          <p className="text-gray-500 mt-10">
+          <p className="text-gray-500 mt-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. <br />
             Lorem Ipsum has been the industry's
