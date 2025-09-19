@@ -17,9 +17,9 @@ const FifthUi= () => {
       </h2>
       <div className="flex justify-center md:gap-12 flex-wrap ">
         <img src={bene} alt="beneshop" className="w-60 h-40 sm:w-60 sm:h-40 lg:w-70 lg:h-50"/>
-        <img src={caspio} alt="caspio" className="w-60 h-40 sm:w-60 sm:h-40" />
-        <img src={hypergrid} alt="hypergrid" className="w-40 h-30 sm:w-60 sm:h-40" />
-        <img src={leo} alt="leo trippi" className="w-60 h-40 sm:w-60 sm:h-40"/>
+        <img src={caspio} alt="caspio" className="w-60 h-40 sm:w-60 sm:h-40 lg:w-70 lg:h-50" />
+        <img src={hypergrid} alt="hypergrid" className="w-40 h-30 sm:w-60 sm:h-40 lg:w-70 lg:h-50" />
+        <img src={leo} alt="leo trippi" className="w-60 h-40 sm:w-60 sm:h-40 lg:w-70 lg:h-50"/>
       </div>
     </div>
 
@@ -42,15 +42,15 @@ const FifthUi= () => {
         <p className="text-[25px] font-semibold leading-12 mb-6 text-black">
           Lorem Ipsum is simply dummy<br /> text of the printing.
         </p>
-       <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+       <div className="flex flex-col sm:flex-row gap-3 w-full max-w-sm mx-auto">
   <input
     type="email"
     placeholder="Enter your email"
-    className="px-20 py-3 rounded-lg border border-gray-300 focus:outline-none w-full max-w-sm text-black bg-white"
+    className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none text-black bg-white"
   />
   <button
     style={{ backgroundColor: "var(--color-black)", color: "white" }}
-    className="px-6 py-3 rounded-lg  sm:w-auto"
+    className="px-6 py-3 rounded-lg w-full sm:w-auto"
   >
     SUBSCRIBE
   </button>

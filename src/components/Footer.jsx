@@ -47,7 +47,7 @@ const Footer = () => {
         {/* Social Icons Section */}
         <div>
           <h3 className="Poppins mt-12">Follow us</h3>
-          <div className="flex gap-(--1) mt-4 md:mt-0 justify-center md:justify-start">
+          <div className="flex gap-(--1) mt-4 md:mt-0  justify-center md:justify-start">
             <a
               href="#"
               className="p-0 rounded-full bg-white flex items-center justify-center"
