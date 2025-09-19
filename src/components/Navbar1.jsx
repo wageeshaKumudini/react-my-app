@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-1 ">
-          <ul className="flex items-center gap-8 relative">
+          <ul className="flex items-center gap-15 relative">
             {links.map((link) => (
               <li key={link.name} className="relative">
                 <a
@@ -71,7 +71,7 @@ const Navbar = () => {
           {/* Contact Button */}
           <a
             href="#contact"
-            className="bg-sky-600 text-white px-6 py-2 rounded-md hover:bg-sky-600"
+            className="bg-sky-600 text-white px-1 py-2 rounded-md hover:bg-sky-600 "
           >
             Contact us
           </a>
@@ -117,7 +117,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="bg-sky-600 text-white px-5 py-2 rounded-md hover:bg-sky-600"
+              className="bg-sky-600 text-white px-5 py-1 rounded-md hover:bg-sky-600"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact us
